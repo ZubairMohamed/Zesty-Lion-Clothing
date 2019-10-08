@@ -1,10 +1,13 @@
 # Welcome to the Zesty Lion Clothing Store!
 
+The best clothing store known to man! I attempted to implement all requirements as laid out by the specs.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.8.
 
 1. You will need node package manager to install the dependencies.
 
 2. You will need the angular cli to get this package to work.
+
 
 ## Instructions
 
