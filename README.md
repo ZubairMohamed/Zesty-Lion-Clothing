@@ -3,6 +3,7 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.8.
 
 1.You will need node package manager to install the dependencies.
+
 2.You will need the angular cli to get this package to work.
 
 ## Development server
