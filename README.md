@@ -32,7 +32,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Given more time I would
 
-> Add more comments so that developers from our team would better understand the code
-> Fix any user interactions with the cart
-> Add better support for screen readers for those with visual impairments
+* Add more comments so that developers from our team would better understand the code.
+* Fix any user interactions with the cart
+* Add better support for screen readers for those with visual impairments
 
