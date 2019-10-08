@@ -1,1 +1,66 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import './app/colours.scss';
+
+//apply to all
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: $font-colour-primary;
+}
+
+.muted {
+  color: $font-colour-muted;
+}
+
+.required {
+  color: $required-star;
+}
+
+.btn {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  margin-left: 0px;
+  margin-right: 5px;
+  margin-top: 10px;
+
+  &_small {
+    font-size: 0.95rem;
+  }
+
+  &_white {
+    padding: 1.5em;
+    border: 2px solid $border-light-grey;
+    color: $font-colour-muted;
+    background: white;
+
+    &:active,
+    &:focus {
+      border: 2px solid $border-dark-grey;
+    }
+  }
+
+  &_black {
+    background: white;
+    border: 2px solid $border-dark-grey;
+    font-weight: bold;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    width: 150px;
+    height: 35px;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: white;
+      background: $border-dark-grey;
+    }
+  }
+}
+
+hr {
+  height: 1px;
+  color: #ececec;
+  background-color: #ececec;
+  border: none;
+}
