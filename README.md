@@ -42,7 +42,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Technology Stack
 
-* Angular, HTML, CSS, JavaScript
+* Angular, HTML, CSS (Sass), JavaScript
 * Libraries - none :) 
 * Data stored using localStorage API
 
