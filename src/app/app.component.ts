@@ -8,6 +8,7 @@ import { Component, AfterViewInit, OnInit } from '@angular/core';
 export class AppComponent implements OnInit, AfterViewInit {
   title = 'zesty-lion-clothing';
 
+  // initalizing variables
   sizeSelected = null;
   smallItems: any = 0;
   mediumItems: any = 0;
@@ -15,17 +16,18 @@ export class AppComponent implements OnInit, AfterViewInit {
   cartItems: any = 0;
 
   ngOnInit() {
+    // when the application is ready call populate cart
     this.populateCart();
   }
 
-  ngAfterViewInit() {
-    //this.populateCart();
-  }
+  ngAfterViewInit() {}
 
+  // S M L button click event so that the current selected size is known to our app
   public setSize(buttonClicked) {
     this.sizeSelected = buttonClicked;
   }
 
+  // event handler for add to cart
   private addToCart() {
     //Alert if the size is not selected
     if (this.sizeSelected == null) {
@@ -50,14 +52,13 @@ export class AppComponent implements OnInit, AfterViewInit {
 
         this.sizeSelected = null;
 
-        //document.getElementById('addToCart').blur();
-
         alert('Added item to cart.');
         this.populateCart();
       }
     }
   }
 
+  // this method deals with showing the user what items are in the cart
   private showCartItems() {
     let small = parseInt(this.smallItems);
     let medium = parseInt(this.mediumItems);
@@ -73,6 +74,7 @@ export class AppComponent implements OnInit, AfterViewInit {
     }
   }
 
+  // this method populates the number of items in each variable
   private populateCart() {
     //get number of items in cart for each size
     if (localStorage.getItem('S') != null) {
@@ -105,6 +107,7 @@ export class AppComponent implements OnInit, AfterViewInit {
     this.recalculate();
   }
 
+  // this recalculates the number of items of different size in each variable
   private recalculate() {
     let total = this.smallItems + this.mediumItems + this.largeItems;
     if (isNaN(total)) {

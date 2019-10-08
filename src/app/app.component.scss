@@ -10,6 +10,7 @@
   }
 }
 
+//cart css
 .my-cart {
   text-align: right;
   margin-right: 10%;
@@ -38,11 +39,13 @@ $top-margin: 40px;
   }
 }
 
+// the inside container
 .inner-container {
   max-width: 1000px;
   margin: auto;
 }
 
+// the entire product view
 .product {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -57,6 +60,7 @@ $top-margin: 40px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 
+  // the title of the product
   &_name {
     font-size: 1.6rem;
   }

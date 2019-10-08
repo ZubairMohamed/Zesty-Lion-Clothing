@@ -1,7 +1,7 @@
 <div class="container">
-  <!-- <app-header class="header"></app-header> -->
-
+  <!-- header bar top level -->
   <div class="header header_bar">
+    <!-- Shopping Cart -->
     <!-- prettier-ignore -->
     <div class="my-cart">My Cart ( {{cartItems}} )
       <div class="my-cart_items">
@@ -9,6 +9,8 @@
             :( you have no items in your cart
           </div>
 
+
+          <!-- Shopping Cart Items -->
           <div class="cart-items">
             <br>
             <app-cart-item size="S" quantity={{this.smallItems}}></app-cart-item>
@@ -22,14 +24,17 @@
     </div>
   </div>
 
+  <!-- Product section -->
   <div class="inner-container">
     <div class="product">
+      <!-- product image -->
       <div class="product_image">
         <img src="../assets/classic-tee.jpg" alt="T-Shirt Product Image" />
       </div>
 
       <div></div>
 
+      <!-- product details right hand column -->
       <div class="product_purchase purchase-container">
         <div class="product_name">Classic Tee</div>
         <br />
@@ -38,6 +43,7 @@
         <hr />
 
         <br />
+        <!-- product description -->
         <div class="product_description muted">
           <p>
             Dolor sit amet consectetur, adipisicing elit. Officiis, veniam?
@@ -49,6 +55,7 @@
         </div>
         <br />
 
+        <!-- product size -->
         <div class="product_size">
           <span class="muted">SIZE</span><span class="required">*</span>
           {{ sizeSelected }}
@@ -66,6 +73,7 @@
 
         <br />
 
+        <!-- product buy button -->
         <button
           class="btn btn_black product_add_to_cart"
           id="addToCart"
@@ -76,5 +84,5 @@
       </div>
     </div>
   </div>
-  <router-outlet></router-outlet>
+  <!-- <router-outlet></router-outlet> -->
 </div>
