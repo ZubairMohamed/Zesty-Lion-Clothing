@@ -2,9 +2,9 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.8.
 
-1.You will need node package manager to install the dependencies.
+1. You will need node package manager to install the dependencies.
 
-2.You will need the angular cli to get this package to work.
+2. You will need the angular cli to get this package to work.
 
 ## Development server
 
@@ -29,3 +29,10 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Given more time I would
+
+> Add more comments so that developers from our team would better understand the code
+> Fix any user interactions with the cart
+> Add better support for screen readers for those with visual impairments
+
